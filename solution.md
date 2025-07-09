@@ -84,14 +84,15 @@ python3 app.py
 
 
 ## Incase you want to containerize your app 
-🚀 Step 4: Run the container
-Set your Aurora credentials as environment variables when running the container:
+
+###🛠️ Step 1: Build the Docker image
+In your terminal, navigate to your project folder and run:
+
+docker build -t flask-todo-app .
 
 
-docker run -d -p 5000:5000 \
-  -e AURORA_WRITE_ENDPOINT=<your-writer-endpoint> \
-  -e AURORA_READ_ENDPOINT=<your-reader-endpoint> \
-  -e DB_USER=<your-db-user> \
-  -e DB_PASSWORD=<your-db-password> \
-  -e DB_NAME=<your-db-name> \
-  --name flask-todo flask-todo-app
+###🚀 Step 2: Run the container
+ when running the container:
+
+
+docker run -d -p 5000:5000 flask-todo flask-todo-app
