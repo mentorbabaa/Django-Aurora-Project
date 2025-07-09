@@ -85,13 +85,13 @@ python3 app.py
 
 ## Incase you want to containerize your app 
 
-###🛠️ Step 1: Build the Docker image
+### 🛠️ Step 1: Build the Docker image
 In your terminal, navigate to your project folder and run:
 
 docker build -t flask-todo-app .
 
 
-###🚀 Step 2: Run the container
+### 🚀 Step 2: Run the container
  when running the container:
 
 
